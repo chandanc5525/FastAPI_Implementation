@@ -1,0 +1,20 @@
+stages:
+  data_ingestion:
+    cmd: python src/data_ingestion.py
+    deps:
+      - src/data_ingestion_stage.py
+      - data/raw/cardiovascular_risk_dataset.csv
+    outs:
+      - data/processed/cardio_processed.csv
+
+  train_model:
+    cmd: python src/model_train.py
+    deps:
+      - src/train_stage.py
+      - data/processed/cardio_processed.csv
+      - params.yaml
+    outs:
+      - models/cardio_pipeline.pkl
+    params:
+      - train.max_iter
+      - train.test_size

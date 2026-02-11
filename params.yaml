@@ -1,0 +1,12 @@
+data:
+  raw_data_path: "data/raw/cardiovascular_risk_dataset.csv"
+  processed_data_path: "data/processed/cardio_processed.csv"
+
+train:
+  target_column: "risk_category"
+  test_size: 0.2
+  random_state: 42
+  max_iter: 100
+
+model:
+  pickle_path: "models/cardio_pipeline.pkl"

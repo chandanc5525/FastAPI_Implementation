@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: fastapi-implementation
+Version: 0.1.0
+Summary: This is FastAPI Implementation
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: chandan-aiops>=1.5.3
+Requires-Dist: flaml>=2.5.0
+Requires-Dist: imblearn>=0.0
+Requires-Dist: jinja2>=3.1.6
+Requires-Dist: numpy>=2.4.2
+Requires-Dist: pandas>=3.0.0
+Requires-Dist: pyyaml>=6.0.3
+Requires-Dist: scikit-learn>=1.8.0
+Requires-Dist: uvicorn>=0.40.0
+
+# FastAPI_Implementation
